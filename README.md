@@ -33,9 +33,7 @@ spec:
   - name: first
     image: nginx:latest
   - name: second
-    image: nginx:1.14.2
-
-
+    image: grafana/grafana-oss
 
 ```
 
@@ -177,7 +175,7 @@ Create a replicaset named `nginx-replicaset` for image `nginx:1.42.6` with 3 rep
 8. Explain your observations from steps 6,7
 
 	```
-	<Type observation here>
+	nginx version changed, replicasets deleted and re-applied, pods started running with correct images
 
 	```
 
